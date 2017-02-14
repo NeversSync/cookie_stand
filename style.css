@@ -4,11 +4,20 @@ body {
     text-shadow: 1px 1px grey;
 }
 
+a {
+    text-decoration: none;    
+}
+
+a:visited {
+  color: inherit;
+}
+
 .logo {
     text-align: center;
     margin: 30px 0px;
     font-size: 3rem;
     text-shadow: 2px 2px grey;
+    color: black;
 }
 
 nav ul {
@@ -29,4 +38,13 @@ nav ul li {
 
 #store_name {
     margin: 10px 20px;
+}
+
+.salmon {
+    margin: auto;
+    float: right;
+}
+
+#clearfix {
+    clear:both;
 }
