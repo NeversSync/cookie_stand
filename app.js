@@ -1,7 +1,7 @@
 'use strict';
 
 //to do:
-var storeHours = ['8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm'];
+var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm'];
 
 function Store(minCustomer, maxCustomer, avgCookiesPer, store) {//constructing store blueprint
   this.minCustomer = minCustomer,
@@ -25,19 +25,19 @@ Store.prototype.cookiesPerHour = function() {//generating total number of cookie
 };
 
 Store.prototype.renderRow = function(parentTable) {//creating and rendering row and data for store
-  var storeRow = document.createElement ('tr');
+  var storeRow = document.createElement('tr');
   parentTable.appendChild(storeRow);
-  var storeNameTD = document.createElement ('td');
-  storeNameTD.textContent = this.storeName;
-  storeRow.appendChild(storeNameTD);
+  var storeNameTH = document.createElement('th');
+  storeNameTH.textContent = this.storeName;
+  storeRow.appendChild(storeNameTH);
   this.cookiesPerHour();
 
   for(var i = 0; i < this.storeCookiesPerHour.length; i++) {
-    var cookieTD = document.createElement ('td');
+    var cookieTD = document.createElement('td');
     cookieTD.textContent = this.storeCookiesPerHour[i];
     storeRow.appendChild(cookieTD);
   }
-  var totalTD = document.createElement ('td');
+  var totalTD = document.createElement('td');
   totalTD.textContent = this.totalDailyCookies;
   storeRow.appendChild(totalTD);
 };
@@ -45,28 +45,29 @@ Store.prototype.renderRow = function(parentTable) {//creating and rendering row 
 
 function renderTable() {//function to create table structure
   //making thead
-  var tableData = document.getElementById ('store_data');
-  var newTHead = document.createElement ('thead');
+  var tableData = document.getElementById('store_data');
+  var newTHead = document.createElement('thead');
   tableData.appendChild(newTHead);
   //making tr
-  var newTR = document.createElement ('tr');
+  var newTR = document.createElement('tr');
   newTHead.appendChild(newTR);
   //making th
-  var newTH = document.createElement ('th');
+  var newTH = document.createElement('th');
   newTR.appendChild(newTH);
   //adding hours to th's
 
   for(var i = 0; i < storeHours.length; i++) {//retrieving/rendering hours from storeHours array.
-    var newTh = document.createElement ('th');
+    var newTh = document.createElement('th');
     newTh.textContent = storeHours[i];
     newTR.appendChild(newTh);
   }
+
   //creating th element for daily totals.
-  var totalTH = document.createElement ('th');
+  var totalTH = document.createElement('th');
   totalTH.textContent = 'Daily Location Total';
   newTR.appendChild(totalTH);
 
-//rendering and populating each store row
+  //rendering and populating each store row
   pikeStore.renderRow(tableData);
   airportStore.renderRow(tableData);
   seattleCenterStore.renderRow(tableData);
