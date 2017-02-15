@@ -4,10 +4,10 @@
 var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm'];
 
 function Store(minCustomer, maxCustomer, avgCookiesPer, store) {//constructing store blueprint
+  this.storeName = store;
   this.minCustomer = minCustomer,
   this.maxCustomer = maxCustomer,
   this.avgCookiesPer = avgCookiesPer,
-  this.storeName = store;
   this.storeCookiesPerHour = [];
   this.totalDailyCookies = 0;
 };
@@ -75,6 +75,33 @@ function renderTable() {//function to create table structure
   alkiStore.renderRow(tableData);
 };
 
+// generating form and assigning inputs to constructor properties
+var userForm = document.getElementById('store_form');
+
+userForm.addEventListener('submit', submitHandler);
+
+function submitHandler(event) {
+  event.preventDefault();
+  var storeName = event.target.store_title.value;
+  var minCustomer = event.target.min_customers.value;
+  var maxCustomer = event.target.max_customers.value;
+  var avgCookiesPer = event.target.avg_cookies_per.value;
+
+  var newStore = new Store(minCustomer, maxCustomer, avgCookiesPer, storeName);
+  var tableData = document.getElementById('store_data');
+  newStore.renderRow(tableData);
+};
+
+// Pushing values to new stores
+var pikeStore = new Store(23, 65, 6.3, '1st and Pike');
+var airportStore = new Store(3, 24, 1.2, 'Seatac Airport');
+var seattleCenterStore = new Store(11, 38, 3.7, 'Seattle Center');
+var capitolStore = new Store(20, 38, 2.3, 'Capitol Hill');
+var alkiStore = new Store(2, 16, 4.6, 'Alki');
+
+renderTable();
+
+
 //finish this; write nested for loop that adds up total cookies per hour and renders that data to new td.
 // var sixAmTotal = pikeStore.storeCookiesPerHour[0] + airportStore.storeCookiesPerHour[0] + seattleCenterStore.storeCookiesPerHour[0] + capitolStore.storeCookiesPerHour[0] + alkiStore.storeCookiesPerHour[0];
 
@@ -87,12 +114,3 @@ function renderTable() {//function to create table structure
 //   var hourTotalTD = document.createElement ('td');
 //   hourTotalTD.textContent('')
 // }
-
-// Pushing values to new stores
-var pikeStore = new Store(23, 65, 6.3, '1st and Pike');
-var airportStore = new Store(3, 24, 1.2, 'Seatac Airport');
-var seattleCenterStore = new Store(11, 38, 3.7, 'Seattle Center');
-var capitolStore = new Store(20, 38, 2.3, 'Capitol Hill');
-var alkiStore = new Store(2, 16, 4.6, 'Alki');
-
-renderTable(); //creating table to populate
