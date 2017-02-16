@@ -83,9 +83,9 @@ userForm.addEventListener('submit', submitHandler);
 function submitHandler(event) {
   event.preventDefault();
   var storeName = event.target.store_title.value;
-  var minCustomer = event.target.min_customers.value;
-  var maxCustomer = event.target.max_customers.value;
-  var avgCookiesPer = event.target.avg_cookies_per.value;
+  var minCustomer = parseInt(event.target.min_customers.value);
+  var maxCustomer = parseInt(event.target.max_customers.value);
+  var avgCookiesPer = parseInt(event.target.avg_cookies_per.value);
 
   var newStore = new Store(minCustomer, maxCustomer, avgCookiesPer, storeName);
   var tableData = document.getElementById('store_data');
