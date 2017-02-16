@@ -5,7 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Shade" rel="stylesheet">
 </head>
 <body>
-	<div class="wrapper">
+	<div>
 		<header>
 			<h1 class="logo"><a href="index.html">Salmon in Your Cookies</a>
 			</h1 id="top-line">
@@ -21,14 +21,12 @@
 			</nav>
 			<hr id="bottom-line">
 		</header>
-			<a id="fish" href="https://www.youtube.com/watch?v=RPMPMDqOdUo"><img id="salmon-sales" src="salmon.png" alt="salmon"></a>
+			<a href="https://www.youtube.com/watch?v=RPMPMDqOdUo" target="_blank"><img id="salmon" src="salmon.png" alt="salmon"></a>
 		<section id="store_name">
 			<h2 id="table-title">Stores and Cookies needed</h2>
-      <div style="overflow-x:auto;">
         <table id="store_data">
         <!--Script input  -->
         </table>
-      </div>
 		</section>
 		<section>
 			<form id="store_form">
@@ -46,16 +44,16 @@
 				<br>
 				<label>Avg. number of cookies per customer: 
 					<br> 
-				<input name="avg_cookies_per" placeholder="#" type="number"  required></label>
+				<input name="avg_cookies_per" placeholder="#" type="number" step="0.1" required></label>
 				<br>
 				<input type="submit" id="submit">
 			</form>
 		</section>
 	</div>
 
-	<div id="cameron">
+	<!--<div id="cameron">
 			<iframe src="http://www.cameronsworld.net/"></iframe>
-	</div>
+	</div>-->
 <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
