@@ -21,6 +21,7 @@
 			</nav>
 			<hr id="bottom-line">
 		</header>
+			<img id="salmon-sales" src="salmon.png" alt="salmon">
 		<section id="store_name">
 			<h2 id="table-title">Stores and Cookies needed</h2>
       <div style="overflow-x:auto;">
@@ -28,7 +29,27 @@
         <!--Script input  -->
         </table>
       </div>
-            <img id="salmon-sales" src="salmon.png" alt="salmon">
+		</section>
+		<section>
+			<form id="store_form">
+				<label>Store name: 
+					<br>
+				<input name="store_title" placeholder="store name" type="text" required autofocus>  </label>
+				<br>
+				<label>Minimum number of customers/hr: 
+					<br>
+				<input name="min_customers" placeholder="#" type="number" required>  </label>
+				<br>
+				<label>Maximum number of customers/hr: 
+					<br>
+				<input name="max_customers" placeholder="#" type="number" required>  </label>
+				<br>
+				<label>Avg. number of cookies per customer: 
+					<br> 
+				<input name="avg_cookies_per" placeholder="#" type="number"  required></label>
+				<br>
+				<input type="submit" id="submit">
+			</form>
 		</section>
 	</div>
 
