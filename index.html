@@ -5,28 +5,86 @@
   <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Shade" rel="stylesheet">
 </head>
 <body>
-	<div class="wrapper">
 		<header>
 			<h1 class="logo"><a href="index.html">Salmon in Your Cookies</a>
-			</h1 id="top-line">
-			<hr>
+			</h1>
+			<hr class="section_divider">
+
 			<nav>
 				<ul>
-					<li><a href="buy_cookies.html">Buy cookies</a></li>
-					<li><a href="about_us.html">About us</a></li>
-					<li><a href="locations.html">locations</a></li>
+					<li><a href="#about_us">About us</a></li>
+					<li><a href="#locations">locations</a></li>
           <li><a href="sales.html">Sales List</a></li>
-					<li id="contact"><a href="contact.html">Contact</a></li>
+					<li id="contact_nav"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<hr id="bottom-line">
+			<hr class="section_divider">
 		</header>
-		<section>
-			<a id="fish" href="https://www.youtube.com/watch?v=RPMPMDqOdUo"><img id="salmon-sales" src="salmon.png" alt="salmon"></a>
-		</section>
-		<div id="cameron">
-			<iframe src="http://www.cameronsworld.net/"></iframe>
-		</div>
-	</div>
+
+		<main>
+			<article>
+				<ul class="3_col_images">
+					<li><img src="images/fish.jpg" alt="fish picture"></li>
+					<li><img src="images/family.jpg" alt="creepy family"></li>
+					<li><img src="images/frosted-cookie.jpg" alt="frosted salmon cookie"></li>
+					<div class="clearfix"></div>
+				</ul>
+			</article>
+
+			<hr class="section_divider">
+
+			<section id="about_us">
+				<article class="left_col">
+					<h2 id="story">Our Story</h2>
+					<p>
+						Like the Salmon, our beginnings are humble and our destination grand as the ocean. Born in the beautiful eddy that is Seattle, we grew out of our home kitchen, wild with excitement about a strange idea; our favorite fish, a symbol of our state, mixed into everyones favorite dish; <br> Cookies! <br>
+						Swim upstream with us, back to your beginnings in grandmas kitchen, Salmon and all. 
+					</p>
+				</article>
+				<article class="right_col">
+					<img id="chinook" src="images/chinook.jpg" alt="chinook salmon">
+				</article>
+			</section>
+
+			<hr class="section_divider">
+
+			<section id="locations">
+				<h2>Our locations and products</h2>
+				<ul class="5_col_images">
+					<li>
+						<img id="ect" src="images/salmon_store.jpg" alt="salmon store">
+					</li>
+					<li>
+						<img src="images/salmon_handler.jpg" alt="salmon holder">
+					</li>
+					<li>
+						<img src="images/salmon-flesh.jpg" alt="salmon flesh">
+					</li>
+					<div>
+					<li>
+						<img id="product1" src="images/cutter.jpeg" alt="cookie cutter">
+					</li>
+					<li>
+						<img id="product2" src="images/shirt.jpg" alt="shirt">
+					</li>
+					</div>
+				</ul>
+				<div class="clearfix"></div>
+			</section>
+
+			<hr class="section_divider">
+
+			<div id="salmon_pic">
+				<img id="salmon" class="grow" src="images/salmon.png" alt="salmon">
+			</div>
+
+			<section id="contact">
+				<a href="mailto:youremailaddress" target="_blank">Email us</a> 
+			</section>
+
+		</main>
+
+		
+
 </body>
 </html>
