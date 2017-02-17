@@ -123,17 +123,42 @@ article ul li img {
   transform: rotateZ(+15deg);
 }
 
-#salmon_pic {
-  padding: 20px;
-  margin: 20px 0px;
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 50px;
 }
 
-/*iframe {
-  width: 100%;
-  margin: 0px auto;
-  height: 700px;
-}*/
+section ul li {
+  list-style-type: none;
+}
 
+section ul li img {
+  width: 350px;
+  height: 225px;
+  float: left;
+  margin: 40px 55px;
+  box-shadow: 0px 0px 4px 4px grey;
+  border-radius: 10px;
+}
+
+#ect {
+  margin-left: 42.5px;
+}
+
+#product1 {
+  margin: 30px 100px 60px 230px;
+}
+
+#product2 {
+  margin: 30px 200px 60px 100px;
+}
+
+#contact {
+  font-size: 3em;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
 
 /*Sales page styling*/
 
@@ -186,7 +211,7 @@ tr:nth-child(even) {background-color: lightgray}
 #salmon {
   display: block;
   width: 48em;
-  margin: 40px auto 80px auto;
+  margin: 40px auto 0px auto;
   transition: all .9s ease;
 }
 
@@ -197,6 +222,12 @@ tr:nth-child(even) {background-color: lightgray}
   box-shadow: 0px 0px 10px lightslategrey;
   border: thick black;
 }
+
+#salmon_pic {
+  padding: 20px 0px 0px 0px;
+  margin: 20px 0px;
+}
+
 
 /*form styling*/
 
