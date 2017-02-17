@@ -206,7 +206,7 @@ table {
 }
 
 #store_name {
-  margin: 10px 20px;
+  margin: 10px 20px 40px 20px;
 }
 
 #table-title {
@@ -270,7 +270,7 @@ form {
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px;
   width: 70%;
-  margin: 100px auto;
+  margin: 50px auto 100px auto;
 }
 
 form label {
