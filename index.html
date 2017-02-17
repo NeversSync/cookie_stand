@@ -1,6 +1,7 @@
 <!DOCTYPE hmtl>
 <html>
 <head>
+	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Shade" rel="stylesheet">
 </head>
@@ -49,28 +50,51 @@
 			<hr class="section_divider">
 
 			<section id="locations">
-				<h2>Our locations and products</h2>
-				<ul class="5_col_images">
+				<h2>Our locations</h2>
+				<ul class="3_col_images clearfix">
 					<li>
 						<img id="ect" src="images/salmon_store.jpg" alt="salmon store">
 					</li>
 					<li>
-						<img src="images/salmon_handler.jpg" alt="salmon holder">
+						<img id="handler_img" src="images/salmon_handler.jpg" alt="salmon holder">
 					</li>
 					<li>
 						<img src="images/salmon-flesh.jpg" alt="salmon flesh">
 					</li>
-					<div>
+						<figcaption><a href="https://www.google.com/maps/place/915+2nd+Ave,+Seattle,+WA+98174/@47.6046037,-122.3377923,17z/data=!3m1!4b1!4m5!3m4!1s0x54906ab052c24325:0x371eab9c8f4eb864!8m2!3d47.6046037!4d-122.3356036" target="_blank">
+							Our original location: <br>
+							24 Seattle st. Seattle, WA. 84232
+							</a>
+						</figcaption>
+						<figcaption id="handler_img_cap">
+							Check out our Salmon! 
+						</figcaption>
+						<figcaption id="in_cookies_cap">
+							This is in your cookies! 
+						</figcaption>
+				</ul>
+			</section>
+
+			<hr id="product_divider" class="section_divider">
+
+			<section class="products">
+				<h2>Salmon products</h2>
+				<ul>
 					<li>
 						<img id="product1" src="images/cutter.jpeg" alt="cookie cutter">
 					</li>
 					<li>
 						<img id="product2" src="images/shirt.jpg" alt="shirt">
 					</li>
-					</div>
-				</ul>
-				<div class="clearfix"></div>
-			</section>
+					<figcaption id="cutter_cap">
+						Our own Salmon cookie cutter
+					</figcaption>
+					<figcaption id="shirt_cap">
+						Represent with our Salmon shirt
+					</figcaption>
+			</ul>
+			<div class="clearfix"></div>
+		</section>
 
 			<hr class="section_divider">
 
@@ -83,8 +107,6 @@
 			</section>
 
 		</main>
-
-		
 
 </body>
 </html>

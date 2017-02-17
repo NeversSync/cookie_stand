@@ -24,6 +24,12 @@ a:hover {
   clear:both;
 }
 
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear:both;
+}
+
 /*Header Stying*/
 .logo {
   text-align: center;
@@ -123,10 +129,15 @@ article ul li img {
   transform: rotateZ(+15deg);
 }
 
+#product_divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 section h2 {
   text-align: center;
   font-size: 2em;
-  margin-top: 50px;
+  margin: 30px 0px 30px 0px;
 }
 
 section ul li {
@@ -134,10 +145,10 @@ section ul li {
 }
 
 section ul li img {
-  width: 350px;
-  height: 225px;
+  width: 369px;
+  height: 250px;
   float: left;
-  margin: 40px 55px;
+  margin: 40px 55px 20px 55px;
   box-shadow: 0px 0px 4px 4px grey;
   border-radius: 10px;
 }
@@ -146,18 +157,41 @@ section ul li img {
   margin-left: 42.5px;
 }
 
-#product1 {
-  margin: 30px 100px 60px 230px;
+figcaption {
+  display: inline-block;
+  margin: 0px 38px;
+  text-align: center;
 }
 
-#product2 {
-  margin: 30px 200px 60px 100px;
+#handler_img_cap {
+  margin-left: 110px;
+}
+
+#in_cookies_cap {
+  margin-left: 160px;
 }
 
 #contact {
   font-size: 3em;
   text-align: center;
   margin: 0px 0px 50px 0px;
+}
+
+#product1 {
+  margin: 30px 100px 30px 225px;
+}
+
+#product2 {
+  margin: 30px 100px 30px 100px;
+}
+
+#cutter_cap {
+  margin-left:230px;
+  margin-bottom: 30px;
+}
+
+#shirt_cap {
+  margin-left:145px;
 }
 
 /*Sales page styling*/
