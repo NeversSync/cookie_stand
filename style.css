@@ -5,6 +5,7 @@ body {
     margin: 0px;
     text-shadow: 1px 1px grey;
     height: 900px;
+    transition:all 0.3s ease;
 }
 
 a {
@@ -19,11 +20,15 @@ a:hover {
   text-shadow: 2px 2px cyan;
 }
 
+.clearfix {
+  clear:both;
+}
+
 /*Header Stying*/
 .logo {
   text-align: center;
   margin: 30px 0px;
-  font-size: 3em;
+  font-size: 3.5em;
   text-shadow: 2px 2px grey;
   color: black;
 }
@@ -39,25 +44,98 @@ nav ul li {
   display: inline-block;
   margin: 10px 0px;
   text-align: center; 
-  padding: 20px;
-  padding-left: 15px;
+  padding: 20px 65px 20px 60px;
   border-right: 1px solid;
-  /*border: 1px solid grey;*/
-  /*box-shadow: 2px 2px 2px 1px grey;*/
 }
 
-#contact {
+#contact_nav {
   border-right: none;
 }
 
-/*Store section styling*/
-#store_name {
-  margin: 10px 20px;
+/*Home Page styling*/
+
+article ul {
+  margin: 60px 20px 60px 20px;
+  padding: 30px 0px; 
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 15px 2px grey; 
+  border-radius: 10px;
 }
 
-#table-title {
+article ul li {
+  list-style-type: none;
+}
+
+article ul li img {
+  width: 350px;
+  height: 225px;
+  float: left;
+  margin: 40px 55px;
+  box-shadow: 0px 0px 4px 4px grey;
+  border-radius: 10px;
+}
+
+.section_divider {
+  border: 0; 
+  height: 1px; 
+  width: 80%;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+#about_us {
+  margin: 40px 0px;
+}
+
+.left_col {
+  display: inline-block;
+  margin: 10px 50px;
+  width: 45%;
+}
+
+.left_col h2 {
+  margin: 5px 0px;
+}
+
+.right_col {
+  display: inline-block;
+  width: 45%;
+  margin: 10px 20px;
+  float: right;
+}
+
+#story {
+  font-size: 2em;
   text-align: center;
 }
+
+#chinook {
+  margin: 40px auto;
+  width: 30em;
+}
+
+#chinook:hover {
+  transition: all .5s ease;
+  -webkit-transform: rotateZ(+15deg);
+  -ms-transform: rotateZ(+15deg);
+  transform: rotateZ(+15deg);
+}
+
+#salmon_pic {
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+/*iframe {
+  width: 100%;
+  margin: 0px auto;
+  height: 700px;
+}*/
+
+
+/*Sales page styling*/
 
 /*Table styling*/
 
@@ -65,6 +143,15 @@ table {
   font-size: 1em;
   /*width: 400px;*/
   overflow-x: auto;
+  transition: all .5s ease;
+}
+
+#store_name {
+  margin: 10px 20px;
+}
+
+#table-title {
+  text-align: center;
 }
 
 table, th, td {
@@ -86,17 +173,31 @@ th:hover {
 
 tr:nth-child(even) {background-color: lightgray}
 
+.threed:hover {
+  box-shadow:
+    0px 0px 5px grey,
+    0px 0px 5px grey,
+    0px 0px 5px grey;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
 /*Image styling*/
 #salmon {
   display: block;
   width: 48em;
   margin: 40px auto 80px auto;
+  transition: all .9s ease;
 }
 
-img:hover {
+.grow:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
   box-shadow: 0px 0px 10px lightslategrey;
   border: thick black;
 }
+
 /*form styling*/
 
 form {
@@ -142,14 +243,4 @@ input:focus {
   transition: none;
   font-size: 1.25em;
   text-shadow: 1px 1px grey;
-}
-
-#cameron {
-  width: 100%;
-}
-
-iframe {
-  width: 100%;
-  margin: 0px auto;
-  height: 700px;
 }
