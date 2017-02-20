@@ -4,7 +4,6 @@ body {
     font-family: 'Bungee Hairline', cursive;
     margin: 0px;
     text-shadow: 1px 1px grey;
-    height: 900px;
     transition:all 0.3s ease;
 }
 
@@ -230,7 +229,9 @@ th:hover {
   background-color: #f5f5f5;
 }
 
-tr:nth-child(even) {background-color: lightgray}
+tr:nth-child(even) {
+  background-color: lightgray;
+  }
 
 .threed:hover {
   box-shadow:
